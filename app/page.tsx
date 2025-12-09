@@ -1,21 +1,10 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import NavBar from './NavBar'
-
-const inter = Inter({ subsets: ['latin'] })
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+const Home = () => {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <NavBar />
-        <h1>hello world</h1>
-        <main>{children}</main>
-      </body>
-    </html>
+    <div>
+      <h1>Welcome to Issue Tracker</h1>
+      <p>Track and manage your project issues efficiently</p>
+    </div>
   )
 }
+
+export default Home
